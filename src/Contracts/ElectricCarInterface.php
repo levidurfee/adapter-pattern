@@ -8,5 +8,5 @@ interface ElectricCarInterface
 
     public function hitBrakes();
 
-    public function recharge($duration, $numberOfBatteries);
+    public function recharge();
 }

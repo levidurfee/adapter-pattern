@@ -27,5 +27,6 @@ class CarAdapter implements CarInterface
     public function fillUp($gas = 87)
     {
         // How would this be handled?
+        $this->electricCar->recharge();
     }
 }

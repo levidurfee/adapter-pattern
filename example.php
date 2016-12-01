@@ -14,6 +14,6 @@ $person = new Person;
 $person->drive($car);
 
 // How do we refuel this electric car?
-$electricCar = new ElectricCar;
+$electricCar = new ElectricCar(60, 4);
 $newCar = new CarAdapter($electricCar);
 $person->drive($newCar);
