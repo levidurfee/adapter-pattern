@@ -6,6 +6,9 @@ use wappr\Contracts\ElectricCarInterface;
 
 class ElectricCar implements ElectricCarInterface
 {
+    public $duration;
+    public $numberOfBatteries;
+
     public function accelerate()
     {
         var_dump('Quietly speeding up.');
@@ -18,6 +21,6 @@ class ElectricCar implements ElectricCarInterface
 
     public function recharge($duration, $numberOfBatteries)
     {
-        var_dump('Car charged '.$numberOfBatteries.' for '.$duration);
+        var_dump('Car charged '.$numberOfBatteries.' batteries for '.$duration);
     }
 }
