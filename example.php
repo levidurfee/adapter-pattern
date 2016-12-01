@@ -1,8 +1,11 @@
 <?php
+
+use wappr\Adapters\CarAdapter;
 use wappr\Car;
+use wappr\ElectricCar;
 use wappr\Person;
 
-require ('vendor/autoload.php');
+require 'vendor/autoload.php';
 
 $car = new Car;
 
@@ -11,7 +14,6 @@ $person = new Person;
 $person->drive($car);
 
 // How do we refuel this electric car?
-$electricCar = new \wappr\ElectricCar;
-$newCar = new \wappr\Adapters\CarAdapter($electricCar);
+$electricCar = new ElectricCar;
+$newCar = new CarAdapter($electricCar);
 $person->drive($newCar);
-

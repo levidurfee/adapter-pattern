@@ -6,7 +6,6 @@ use wappr\Contracts\CarInterface;
 
 class Car implements CarInterface
 {
-
     public function hitGas()
     {
         var_dump('Car is speeding up.');

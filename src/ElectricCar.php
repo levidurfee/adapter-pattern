@@ -6,7 +6,6 @@ use wappr\Contracts\ElectricCarInterface;
 
 class ElectricCar implements ElectricCarInterface
 {
-
     public function accelerate()
     {
         var_dump('Quietly speeding up.');
